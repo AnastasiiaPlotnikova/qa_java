@@ -19,7 +19,7 @@ public class LionParameterizedTest {
     }
 
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}, {1}")
     public static Object[][] getMane() {
         return new Object[][]{
                 {"Самец", true},
