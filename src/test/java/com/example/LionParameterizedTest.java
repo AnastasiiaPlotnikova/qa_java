@@ -20,13 +20,11 @@ public class LionParameterizedTest {
 
 
     @Parameterized.Parameters
-    public static Object[][] getMane()
-
-    {
+    public static Object[][] getMane() {
         return new Object[][]{
                 {"Самец", true},
                 {"Самка", false}
-        } ;
+        };
     }
 
     @Test
@@ -35,4 +33,4 @@ public class LionParameterizedTest {
         Lion lion = new Lion(sex, feline);
         assertEquals("Невозможно определить есть ли грива", expected, lion.doesHaveMane());
     }
-    }
+}

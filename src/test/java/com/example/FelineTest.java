@@ -13,7 +13,7 @@ public class FelineTest {
     @Test
     public void eatMeatReturnsExpectedFoodList() throws Exception {
         feline = new Feline();
-        assertEquals("Список продуктов не совпадает" ,List.of("Животные", "Птицы", "Рыба"), feline.eatMeat());
+        assertEquals("Список продуктов не совпадает", List.of("Животные", "Птицы", "Рыба"), feline.eatMeat());
     }
 
     @Test
@@ -25,6 +25,6 @@ public class FelineTest {
     @Test
     public void getKittensReturnsOneKitten() {
         Feline feline = new Feline();
-        assertEquals("Количество должно быть равно 1" ,1, feline.getKittens());
+        assertEquals("Количество должно быть равно 1", 1, feline.getKittens());
     }
 }
